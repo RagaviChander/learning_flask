@@ -3,11 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+    rel="stylesheet"
+    href="{{ url_for('static', filename='css/stylesheet.css') }}"
+    />
     <title>Document</title>
 </head>
 <body>
     {% block body %}
 
     {% endblock %}
+    <a href="index.html">Go to the homepage </a>
+    <a href="about.html">Go to the about page </a>
 </body>
 </html>
